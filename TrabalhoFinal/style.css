@@ -1,0 +1,134 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sekuya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+
+
+/* Header e barra de navegação - feita com auxilio de IA */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #7a4120;
+}
+
+#logo {
+    display: flex;
+}
+
+#logo img {
+    height: 70px;
+    width: auto;
+}
+
+#navegacao {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#navegacao .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.2s ease-in-out;
+    margin-left: 5px;
+}
+
+#navegacao .nav-link:hover:not(.disabled) {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#navegacao .nav-pills .nav-link.active {
+    color: #8A4721 !important;
+    background-color: #ffffff !important;
+}
+
+#navegacao .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Final Header e barra de navegação - feita com auxilio de IA */
+
+
+/* Começo corpo da página Index (Home) */
+body{
+    background-color: #f7eee2bf;
+}
+
+section {
+    margin: 30px 45px;
+}
+
+#foto {
+    float: right;
+}
+
+#foto img {
+    width: 550px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#foto img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.texto {
+    font-family: "Elms Sans", sans-serif;
+    width: 570px;
+    text-align: justify;
+    font-size: 20px;
+    float: left;
+    margin-top: 42px;
+}
+
+#destaque{
+    font-family: "Oswald", system-ui;
+    font-size: 24px;
+    color:#5b341d
+}
+
+#nomeDestaque{ 
+    font-family: "Sekuya", system-ui;
+    font-size: 32px;
+    color:#d27a47
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: 1px rgb(112, 80, 52);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+}
+
+#reserva {
+    background-color: #24620e;
+    width: 280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#reserva:hover {
+    background: #3ea619;
+    border: 1px #164505;
+    transform: scale(1.01);
+}
+
+#visualizarMenu {
+    background-color: #24620e;
+    width: 280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#visualizarMenu:hover {
+    background: #3ea619;
+    border: 1px #164505;
+    transform: scale(1.01);
+}
