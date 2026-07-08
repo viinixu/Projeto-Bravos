@@ -1,0 +1,95 @@
+/* Header e barra de navegação - feita com auxilio de IA */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #7a4120;
+}
+
+#logo {
+    display: flex;
+}
+
+#logo img {
+    height: 70px;
+    width: auto;
+}
+
+#navegacao {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#navegacao .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.2s ease-in-out;
+    margin-left: 5px;
+}
+
+#navegacao .nav-link:hover:not(.disabled) {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#navegacao .nav-pills .nav-link.active {
+    color: #8A4721 !important;
+    background-color: #ffffff !important;
+}
+
+#navegacao .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.35) !important;
+}
+/* Final Header e barra de navegação - feita com auxilio de IA */
+
+
+/* Começo corpo da página Index (Home) */
+section{
+    margin: 30px 45px;
+}
+
+#foto {
+    float: right;
+}
+
+#foto img {
+    width: 550px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#foto img:hover {
+    transform: scale(1.06) rotate(3deg);
+}
+
+.texto {
+    font-family: "Elms Sans", sans-serif;
+    width: 570px;
+    text-align: justify;
+    font-size: 20px;
+    float: left;
+}
+
+button{
+    flex: 1;
+    padding: 10px;
+    border: 1px rgb(112, 80, 52);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+}
+
+#reserva{
+    background-color: #7a4120;
+    width: 570px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#reserva:hover{
+    background: rgb(222, 181, 99);
+    transform: scale(1.01);
+}
