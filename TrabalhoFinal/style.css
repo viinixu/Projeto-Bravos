@@ -531,3 +531,85 @@ button {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width:992px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.nav{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+section{
+    margin:20px;
+}
+
+#foto{
+    float:none;
+    text-align:center;
+}
+
+#foto img{
+    width:100%;
+    height:auto;
+}
+
+#textoIntro{
+    float:none;
+    width:100%;
+    margin-top:25px;
+    text-align:center;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+}
+
+.cards-historia-container{
+    grid-template-columns:1fr;
+}
+
+.linha-decorativa{
+    width:35%;
+}
+
+}
+
+@media (max-width:576px){
+
+header{
+    padding:15px;
+}
+
+#logo img{
+    height:55px;
+}
+
+#text h1{
+    font-size:32px;
+}
+
+#destaque{
+    font-size:20px;
+}
+
+#nomeDestaque{
+    font-size:28px;
+}
+
+#textoIntro{
+    font-size:18px;
+}
+
+button{
+    font-size:16px;
+}
+
+}
