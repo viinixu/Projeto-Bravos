@@ -9,11 +9,18 @@ html {
 /* AUXILIO DE IA PARA TRANSIÇÕES */
 /* Header e barra de navegação - feita com auxilio de IA */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 15px 40px;
     background: #7a4120;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
 }
 
 #logo {
@@ -238,7 +245,7 @@ button {
 #Menu {
     display: flex;
     justify-content: center;
-    
+
     animation: aparecerSuave linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 40%;
@@ -253,7 +260,7 @@ button {
     padding: 15px 35px 35px 35px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 25px;
 }
 
@@ -262,9 +269,9 @@ button {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: -50px; 
+    margin-top: -50px;
     position: relative;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .linha-decorativa-menu {
@@ -298,7 +305,7 @@ button {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px; 
+    gap: 30px;
 }
 
 .item-cardapio {
@@ -331,11 +338,13 @@ button {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 /* Fim da Terceira Seção */
 
 
@@ -344,10 +353,12 @@ button {
 
 #Eventos {
     padding: 60px 20px;
-    background-color: #ffffff; /* Fundo claro para dar um contraste limpo com o menu */
+    background-color: #ffffff;
+    /* Fundo claro para dar um contraste limpo com o menu */
 }
 
-#fundo-eventos { /* Alinhamento centralizado */
+#fundo-eventos {
+    /* Alinhamento centralizado */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -377,12 +388,14 @@ button {
 }
 
 .item-evento {
-    background-color: #fdfaf7; /* Off-white suave puxado para o tom amadeirado */
+    background-color: #fdfaf7;
+    /* Off-white suave puxado para o tom amadeirado */
     border: 1px solid #e2d6cd;
     border-radius: 12px;
     padding: 30px;
     flex: 1;
-    min-width: 280px; /* Garante que fique responsivo em telas menores */
+    min-width: 280px;
+    /* Garante que fique responsivo em telas menores */
     max-width: 340px;
     display: flex;
     flex-direction: column;
