@@ -552,7 +552,7 @@ button {
 
 /* RESPONSIVIDADE */
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     header {
         flex-direction: row;
         flex-wrap: wrap;
@@ -632,7 +632,48 @@ button {
         width: 100%;
         margin-top: 10px;
     }
+}
 
+
+@media (max-width: 576px) {
+    header {
+        padding: 15px;
+    }
+
+    #logo img {
+        height: 55px;
+    }
+
+    #text h1 {
+        font-size: 32px;
+    }
+
+    #destaque {
+        font-size: 20px;
+    }
+
+    #nomeDestaque {
+        font-size: 28px;
+    }
+
+    #textoIntro {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Regra para telas grandes (4K) */
+@media (min-width: 2000px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:576px) {
