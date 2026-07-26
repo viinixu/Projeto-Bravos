@@ -68,6 +68,12 @@ header {
     padding: 5px 15px;
 }
 
+/* NOVO: Classe que o JavaScript vai usar para mostrar o menu */
+#navegacao.ativo {
+    display: block !important;
+}
+
+
 /* Final Header e barra de navegação - feita com auxilio de IA */
 
 
