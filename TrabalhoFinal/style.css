@@ -57,6 +57,17 @@ header {
     color: rgba(255, 255, 255, 0.35) !important;
 }
 
+#menu-toggle {
+    display: none;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
 /* Final Header e barra de navegação - feita com auxilio de IA */
 
 
@@ -534,82 +545,82 @@ button {
 
 /* RESPONSIVIDADE */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-header{
-    flex-direction:column;
-    text-align:center;
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    #foto {
+        float: none;
+        text-align: center;
+    }
+
+    #foto img {
+        width: 100%;
+        height: auto;
+    }
+
+    #textoIntro {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cards-historia-container {
+        grid-template-columns: 1fr;
+    }
+
+    .linha-decorativa {
+        width: 35%;
+    }
+
 }
 
-.nav{
-    justify-content:center;
-    flex-wrap:wrap;
-}
+@media (max-width:576px) {
 
-section{
-    margin:20px;
-}
+    header {
+        padding: 15px;
+    }
 
-#foto{
-    float:none;
-    text-align:center;
-}
+    #logo img {
+        height: 55px;
+    }
 
-#foto img{
-    width:100%;
-    height:auto;
-}
+    #text h1 {
+        font-size: 32px;
+    }
 
-#textoIntro{
-    float:none;
-    width:100%;
-    margin-top:25px;
-    text-align:center;
-}
+    #destaque {
+        font-size: 20px;
+    }
 
-button{
-    width:100%;
-    margin-top:10px;
-}
+    #nomeDestaque {
+        font-size: 28px;
+    }
 
-.cards-historia-container{
-    grid-template-columns:1fr;
-}
+    #textoIntro {
+        font-size: 18px;
+    }
 
-.linha-decorativa{
-    width:35%;
-}
-
-}
-
-@media (max-width:576px){
-
-header{
-    padding:15px;
-}
-
-#logo img{
-    height:55px;
-}
-
-#text h1{
-    font-size:32px;
-}
-
-#destaque{
-    font-size:20px;
-}
-
-#nomeDestaque{
-    font-size:28px;
-}
-
-#textoIntro{
-    font-size:18px;
-}
-
-button{
-    font-size:16px;
-}
+    button {
+        font-size: 16px;
+    }
 
 }
