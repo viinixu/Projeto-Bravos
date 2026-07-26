@@ -553,15 +553,15 @@ button {
 /* RESPONSIVIDADE */
 
 @media (max-width:992px) {
-
     header {
-        flex-direction: c;
-        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .nav {
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
     }
 
     section {
@@ -596,6 +596,41 @@ button {
 
     .linha-decorativa {
         width: 35%;
+    }
+
+    /* Mostra o botão hambúrguer no celular */
+    #menu-toggle {
+        display: block;
+    }
+
+    /* Esconde a navegação padrão e prepara para o clique */
+    #navegacao {
+        display: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Comportamento da Primeira Seção no celular */
+    #home-intro {
+        flex-direction: column-reverse;
+        /* Foto sobe, texto desce */
+        text-align: center;
+        margin: 20px;
+    }
+
+    #conteudo-intro {
+        align-items: center;
+    }
+
+    #botoes-intro {
+        flex-direction: column;
+        /* Botões empilhados */
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
     }
 
 }
