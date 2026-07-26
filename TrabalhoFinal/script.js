@@ -26,5 +26,15 @@ btnMenu.addEventListener("click", () => {
         alert("Menu em desenvolvimento.");
 
     }
+    // Lógica do Menu Responsivo
+const menuToggle = document.getElementById("menu-toggle");
+const navegacao = document.getElementById("navegacao");
+
+if (menuToggle && navegacao) {
+    menuToggle.addEventListener("click", () => {
+        // A classe 'ativo' foi criada no CSS para mostrar a nav
+        navegacao.classList.toggle("ativo");
+    });
+}
 
 });
