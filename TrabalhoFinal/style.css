@@ -190,11 +190,12 @@ button {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    margin-top: 70px;
+    margin: 70px auto 0; /* ALTERADO: Adicionado 'auto' para centralizar perfeitamente */
 }
 
 .linha-decorativa {
-    width: 500px;
+    flex: 1; /* ALTERADO: Isso faz a linha crescer ou encolher automaticamente conforme a tela */
+    max-width: 450px; /* Limita o tamanho máximo para não esticar demais em telas gigantes */
     height: 2px;
     background-color: #d27a47;
 }
@@ -219,11 +220,10 @@ button {
 
 .cards-historia-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto 0; /* ALTERADO: Adicionado 'auto' para centralizar os cards com o título */
     border-radius: 20px;
     padding: 35px;
     box-sizing: border-box;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
