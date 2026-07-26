@@ -79,7 +79,6 @@ header {
 
 /* Começo corpo da página Index (Home) */
 /* Primeira Seção */
-/* Começo do corpo da página Index (Home) */
 body {
     background-color: #f7eee2bf;
 }
@@ -88,9 +87,10 @@ body {
 #home-intro {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    margin: 30px 45px;
+    justify-content: center; /* ALTERADO: Centraliza os itens no meio da tela */
+    gap: 100px; /* Aumentamos um pouco o espaço entre o texto e a foto para respirar melhor */
+    max-width: 1200px; /* Define um tamanho máximo igual ao das outras seções */
+    margin: 100px auto; /* O 'auto' nas laterais garante que a seção inteira fique no centro da página */
 }
 
 #conteudo-intro {
@@ -121,12 +121,10 @@ body {
 #botoes-intro {
     display: flex;
     gap: 15px;
-    /* Espaço entre os botões */
     margin-top: 20px;
 }
 
 #foto {
-    /* Removemos o float: right */
     display: flex;
     justify-content: center;
 }
