@@ -6,8 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* AUXILIO DE IA PARA TRANSIÇÕES */
-/* Header e barra de navegação - feita com auxilio de IA */
 header {
     position: sticky;
     top: 0;
