@@ -33,7 +33,6 @@ const formReserva = document.getElementById("formReserva");
 
 if (formReserva) {
     formReserva.addEventListener("submit", function(event) {
-        // Evita que a página recarregue ao enviar o formulário
         event.preventDefault();
 
         // Captura os valores digitados pelo usuário
