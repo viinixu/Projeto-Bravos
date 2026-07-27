@@ -10,13 +10,29 @@
 <body style="background-color: #f7eee2bf;">
     
     <!-- Cabeçalho simplificado para navegação -->
-    <header style="background: #7a4120; padding: 15px 40px;">
+<header>
         <a id="logo" href="index.html">
-            <img src="img/img-logo2.png" height="70" alt="Logo">
+            <img src="Img/img-logo2.png" alt="Logo Bravos">
         </a>
-        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold; float: right; margin-top: 20px;">Voltar para Home</a>
+        <!-- Botão do menu responsivo para celular -->
+        <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav id="navegacao">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#quem-somos">Quem somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Eventos">Eventos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
     <main style="min-height: 80vh; display: flex; justify-content: center; align-items: center; padding: 20px;">
         <div style="background-color: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); width: 100%; max-width: 600px;">
             <h2 style="color: #5b341d; font-family: 'Oswald', sans-serif; text-align: center;">Noite do Sertanejo Raiz</h2>
@@ -73,5 +89,7 @@
             }
         }
     </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
